@@ -1,0 +1,28 @@
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logo {
+  margin: 0 auto;
+  width: 500px;
+}
+
+.content-section {
+  margin: 40px 0;
+}
+
+@media (max-width: 650px) {
+  .logo {
+    width: 300px;
+  }
+}

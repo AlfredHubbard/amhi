@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  --primary-color: #027FF2;
+  --secondary-color: #ff5e78;
+  --light-color: #ffffff;
+  --dark-color: #000000;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--dark-color);
+  font-size: 16px;
+  color: var(--light-color);
+}
+
+a {
+  color: var(--primary-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem 40px;
+}
+
+.navbar, .footer {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  background-color: rgba(26, 26, 26, 0.73);
+}
+
+.navbar-options-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-option {
+  width: 25%;
+  text-align: center;
+}
+
+.navbar-logo {
+  width: 150px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: var(--light-color);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.navbar-link:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.logo-link-container {
+  padding: 0.5rem;
+  background-color: var(--primary-color);
+  border-radius: 16px;
+  border: 2px solid var(--light-color);
+  cursor: pointer;
+}
+
+.logo-link {
+  color: #FFFF00;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-shadow: 
+    2px 2px 0px black,
+    -2px -2px 0px black,
+    -2px 2px 0px black,
+    2px -2px 0px black;
+}
+
+.header {
+  margin: 40px 0 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.header2 {
+  margin: 30px 0 20px;
+  font-size: 20px;
+}
+
+.article {
+  margin: 20px 0;
+}
+
+.footer {
+  width: 100%;
+}
+
+.footer-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 16px;
+}
+
+@media (max-width: 650px) {
+  .container {
+    padding: 0 .5rem 20px;
+  }
+
+  .navbar, .footer {
+    padding: .5rem;
+    flex-wrap: wrap;
+    gap: 16px;
+    background-color: rgba(26, 26, 26, 0.73);
+  }
+
+  .footer-list {
+    flex-direction: column;
+  }
+
+  .navbar-option {
+    width: 30%;
+    text-align: center;
+  }
+
+  .navbar-link {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .navbar-options-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .navbar-link {
+    padding: 0;
+  }
+
+  .header {
+    margin: 20px 0 0;
+    font-size: 18px;
+  }
+
+  .article, .article-list li {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,19 @@
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.faq-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.question {
+  font-weight: 700;
+}
+
+.answer a {
+  color: var(--primary-color);
+}
