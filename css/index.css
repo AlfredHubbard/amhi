@@ -25,18 +25,26 @@ a {
 
 .container {
   max-width: 1200px;
+  min-height: 75vh;
   margin: 0 auto;
   padding: 0 1rem 40px;
 }
 
-.navbar, .footer {
+.navbar-container, .footer {
+  width: 100%;
+  background-color: #181818;
+}
+
+.navbar, .footer-list {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 1rem 2rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 24px;
-  background-color: rgba(26, 26, 26, 0.73);
+  background-color: #181818;
 }
 
 .navbar-options-container {
