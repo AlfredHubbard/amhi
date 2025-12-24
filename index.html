@@ -53,7 +53,26 @@
 
       <div class="logo-container">
         <img class="logo" src="images/logo.jpg" alt="AMHI">
-      </div>
+      </div><div class="testimonial-container">
+    <img class="testimonial" src="images/testimonial.jpg" alt="testimonial">
+</div>
+
+<style>
+.testimonial-container {
+    display: flex;
+    justify-content: center; /* horizontal centering */
+    align-items: center;     /* vertical centering, if container has height */
+    /* optional: set a height if you want vertical centering */
+    /* height: 200px; */
+}
+
+.testimonial {
+    max-width: 300px;   /* maximum width */
+    width: 100%;        /* scales responsively */
+    height: auto;       /* maintains aspect ratio */
+}
+</style>
+      
     </section>
 
     <section class="content-section">
@@ -65,18 +84,6 @@
 
     </section>
 
-      
-.testimonial-container {
-  text-align: center;      /* centers inline images */
-}
-
-.testimonial {
-  max-width: 400px;        /* adjust as needed */
-  width: 100%;
-  height: auto;            /* preserves aspect ratio */
-  display: inline-block;
-}
- 
 
 
   
